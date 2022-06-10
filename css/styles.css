@@ -19,8 +19,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   background-color: #fff;
   color: #212121;
 }
@@ -39,8 +39,8 @@ body {
 
 .gallery__item {
   position: relative;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 
 .gallery__image:hover {
@@ -112,8 +112,8 @@ body {
 
 .lightbox__button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +128,7 @@ body {
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--timing-function);
   outline: none;
-  background-image: url("../images/icon-close.svg");
+  background-image: url('../images/icon-close.svg');
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -136,5 +136,25 @@ body {
 
 .lightbox__button:hover,
 .lightbox__button:focus {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.left-slider {
+
+
+ top: 45vh;
+  height: 100px;
+  left: 0px;
+  right: auto;
+  background-image: url('../images/arrow-left.svg');
+  background-size: auto 50px;
+}
+
+.right-slider{
+  top: 45vh;
+  height: 100px;
+  right: 0px;
+  background-image: url('../images/arrow-right.svg');
+  background-size: auto 50px;
+
 }
